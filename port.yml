@@ -67,6 +67,15 @@
     system: helene
     providesApi: slskd-api
 
+## vip
+- identifier: vip-nextcloud
+  title: Nextcloud
+  blueprint: component
+  properties: {}
+  relations:
+    system: vip
+    providesApi: vip-nextcloud-api
+
 ## tentacules
 - identifier: workflow-frainciesco-chat
   title: frainsiesco/chat
@@ -75,9 +84,10 @@
   relations:
     system: tentacules
     providesApi: ytdl-server-api
-    consumesApi: [ytdl-server-api, slskd-api]
+    consumesApi: [ytdl-server-api, slskd-api, vip-nextcloud]
 
 # apis
+## helene
 - identifier: ytdl-server-api
   title: ytdl-server API
   blueprint: api
@@ -86,6 +96,13 @@
   title: slskd API
   blueprint: api
   properties: {}
+
+## vip
+- identifier: vip-nextcloud-api
+  title: Nextcloud API
+  blueprint: api
+  properties: {}
+
 
 # # resources
 # - identifier: cartSqlDb
