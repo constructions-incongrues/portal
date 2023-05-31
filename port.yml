@@ -84,7 +84,7 @@
   relations:
     system: tentacules
     providesApi: ytdl-server-api
-    consumesApi: [ytdl-server-api, slskd-api, vip-nextcloud]
+    consumesApi: [ytdl-server-api, slskd-api, vip-nextcloud-api]
 
 # apis
 ## helene
