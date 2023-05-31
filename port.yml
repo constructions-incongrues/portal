@@ -17,6 +17,7 @@
   blueprint: domain
   properties: {}
   relations: {}
+
 # systems
 - identifier: tentacules
   title: Tentacules
@@ -26,6 +27,12 @@
     domain: constructions-incongrues-net
 - identifier: ivresse
   title: Ivresse
+  blueprint: system
+  properties: {}
+  relations:
+    domain: constructions-incongrues-net
+- identifier: helene
+  title: Hélène
   blueprint: system
   properties: {}
   relations:
@@ -42,6 +49,33 @@
   properties: {}
   relations:
     domain: incongru-org
+
+# components
+- identifier: ytdl-server
+  title: ytdl-server
+  blueprint: component
+  properties:
+    providesApi: ytdl-server-api
+  relations:
+    system: helene
+- identifier: slskd
+  title: slskd
+  blueprint: component
+  properties:
+    providesApi: slskd-api
+  relations:
+    system: helene
+
+# apis
+- identifier: ytdl-server-api
+  title: ytdl-server API
+  blueprint: api
+  properties: {}
+- identifier: slskd-api
+  title: slskd API
+  blueprint: api
+  properties: {}
+
 # # resources
 # - identifier: cartSqlDb
 #   title: Cart SQL DB
