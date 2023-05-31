@@ -17,27 +17,27 @@
   blueprint: domain
   properties: {}
   relations: {}
-# # systems
-# - identifier: tentacules
-#   title: Tentacules
-#   blueprint: system
-#   relations:
-#     domain: constructions-incongrues-net
-# - identifier: ivresse
-#   title: Ivresse
-#   blueprint: system
-#   relations:
-#     domain: constructions-incongrues-net
-# - identifier: vip
-#   title: VIP
-#   blueprint: system
-#   relations:
-#     domain: jeancloude-club
-# - identifier: discutons
-#   title: Discutons
-#   blueprint: system
-#   relations:
-#     domain: incongru-org
+# systems
+- identifier: tentacules
+  title: Tentacules
+  blueprint: system
+  relations:
+    domain: constructions-incongrues-net
+- identifier: ivresse
+  title: Ivresse
+  blueprint: system
+  relations:
+    domain: constructions-incongrues-net
+- identifier: vip
+  title: VIP
+  blueprint: system
+  relations:
+    domain: jeancloude-club
+- identifier: discutons
+  title: Discutons
+  blueprint: system
+  relations:
+    domain: incongru-org
 # # resources
 # - identifier: cartSqlDb
 #   title: Cart SQL DB
