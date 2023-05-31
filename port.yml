@@ -21,21 +21,25 @@
 - identifier: tentacules
   title: Tentacules
   blueprint: system
+  properties: {}
   relations:
     domain: constructions-incongrues-net
 - identifier: ivresse
   title: Ivresse
   blueprint: system
+  properties: {}
   relations:
     domain: constructions-incongrues-net
 - identifier: vip
   title: VIP
   blueprint: system
+  properties: {}
   relations:
     domain: jeancloude-club
 - identifier: discutons
   title: Discutons
   blueprint: system
+  properties: {}
   relations:
     domain: incongru-org
 # # resources
