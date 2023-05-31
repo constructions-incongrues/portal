@@ -91,7 +91,7 @@
   blueprint: component
   properties: {}
   relations:
-    system: tentacules
+    system: discutons
     consumesApi: [tentacules-frainciesco-chat-api]
 
 # apis
