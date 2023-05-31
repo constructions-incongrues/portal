@@ -52,20 +52,20 @@
 
 # components
 ## helene
-- identifier: ytdl-server
+- identifier: helene-ytdl-server
   title: ytdl-server
   blueprint: component
   properties: {}
   relations:
     system: helene
-    providesApi: ytdl-server-api
-- identifier: slskd
+    providesApi: helene-ytdl-server-api
+- identifier: helene-slskd
   title: slskd
   blueprint: component
   properties: {}
   relations:
     system: helene
-    providesApi: slskd-api
+    providesApi: helene-slskd-api
 
 ## vip
 - identifier: vip-nextcloud
@@ -77,22 +77,30 @@
     providesApi: vip-nextcloud-api
 
 ## tentacules
-- identifier: workflow-frainciesco-chat
+- identifier: tentacules-frainciesco-chat
   title: frainsiesco/chat
   blueprint: component
   properties: {}
   relations:
     system: tentacules
-    providesApi: ytdl-server-api
-    consumesApi: [ytdl-server-api, slskd-api, vip-nextcloud-api]
+    consumesApi: [tentacules-ytdl-server-api, tentacules-slskd-api, vip-nextcloud-api]
+
+## discutons
+- identifier: discutons-webhook-outgoing-frainciesco
+  title: Outgoing Webhook "frainsciesco"
+  blueprint: component
+  properties: {}
+  relations:
+    system: tentacules
+    consumesApi: [tentacules-frainciesco-chat-api]
 
 # apis
 ## helene
-- identifier: ytdl-server-api
+- identifier: tentacules-ytdl-server-api
   title: ytdl-server API
   blueprint: api
   properties: {}
-- identifier: slskd-api
+- identifier: tentacules-slskd-api
   title: slskd API
   blueprint: api
   properties: {}
@@ -100,6 +108,12 @@
 ## vip
 - identifier: vip-nextcloud-api
   title: Nextcloud API
+  blueprint: api
+  properties: {}
+
+## tentacules
+- identifier: tentacules-frainciesco-chat-api
+  title: frainsiesco/chat Webhook
   blueprint: api
   properties: {}
 
