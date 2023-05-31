@@ -5,33 +5,39 @@
 - identifier: constructions-incongrues-net
   title: constructions-incongrues.net
   blueprint: domain
+  properties: {}
+  relations: {}
 - identifier: jeancloude-club
   title: jeancloude.club
   blueprint: domain
+  properties: {}
+  relations: {}
 - identifier: incongru-org
   title: incongru.org
   blueprint: domain
-# systems
-- identifier: tentacules
-  title: Tentacules
-  blueprint: system
-  relations:
-    domain: constructions-incongrues-net
-- identifier: ivresse
-  title: Ivresse
-  blueprint: system
-  relations:
-    domain: constructions-incongrues-net
-- identifier: vip
-  title: VIP
-  blueprint: system
-  relations:
-    domain: jeancloude-club
-- identifier: discutons
-  title: Discutons
-  blueprint: system
-  relations:
-    domain: incongru-org
+  properties: {}
+  relations: {}
+# # systems
+# - identifier: tentacules
+#   title: Tentacules
+#   blueprint: system
+#   relations:
+#     domain: constructions-incongrues-net
+# - identifier: ivresse
+#   title: Ivresse
+#   blueprint: system
+#   relations:
+#     domain: constructions-incongrues-net
+# - identifier: vip
+#   title: VIP
+#   blueprint: system
+#   relations:
+#     domain: jeancloude-club
+# - identifier: discutons
+#   title: Discutons
+#   blueprint: system
+#   relations:
+#     domain: incongru-org
 # # resources
 # - identifier: cartSqlDb
 #   title: Cart SQL DB
