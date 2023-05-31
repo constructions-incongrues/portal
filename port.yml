@@ -51,6 +51,7 @@
     domain: incongru-org
 
 # components
+## helene
 - identifier: ytdl-server
   title: ytdl-server
   blueprint: component
@@ -65,6 +66,16 @@
   relations:
     system: helene
     providesApi: slskd-api
+
+## tentacules
+- identifier: workflow-frainciesco-chat
+  title: frainsiesco/chat
+  blueprint: component
+  properties: {}
+  relations:
+    system: tentacules
+    providesApi: ytdl-server-api
+    consumesApi: [ytdl-server-api, slskd-api]
 
 # apis
 - identifier: ytdl-server-api
