@@ -54,17 +54,17 @@
 - identifier: ytdl-server
   title: ytdl-server
   blueprint: component
-  properties:
-    providesApi: ytdl-server-api
+  properties: {}
   relations:
     system: helene
+    providesApi: ytdl-server-api
 - identifier: slskd
   title: slskd
   blueprint: component
-  properties:
-    providesApi: slskd-api
+  properties: {}
   relations:
     system: helene
+    providesApi: slskd-api
 
 # apis
 - identifier: ytdl-server-api
